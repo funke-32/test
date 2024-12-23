@@ -48,8 +48,6 @@ Validator: The Validator verifies these rules using computer vision to ensure th
 
 
 	
-HTML ReWriter: Once validated, the optimization rules are stored in a collection accessed by the HTML ReWriter. The HTML ReWriter then applies these rules to incoming requests matching the URL, optimizing the pages in the background before delivery to the end user.
-When a new request comes in for that URL, P3 applies the cached rules to the page and swiftly returns the optimized version to the user. Through this structured approach, P3 continuously adapts to deliver faster and more responsive content to users. Refer to the official documentation to learn more about P3 Architecture. To visually compare the optimized webpage with the original and gain deeper insights into analysis metrics, visit  View P3 Validations.
 
 
 
