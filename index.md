@@ -43,13 +43,11 @@ If there are no optimization rules in memory for that URL, the HTML ReWriter for
 However, if a policy does match, it triggers a new optimization job. This process involves three key phases:
 Analyzer: P3’s AI-based engine actively learns the content of your web pages, training itself to find a combination of optimization rules that can be applied to your website. By assessing different combinations of optimization rules, it determines the best possible rules to boost your core web vitals. These optimizations can include bundling CSS and JS, inline CSS and JS, and optimizations for slow networks. For a complete list of optimizations, see the official P3 guide.
 If your webpage is updated, P3 trains itself again on the new content to determine the updated optimizations required for it.
-Validator: The Validator verifies these rules using computer vision to ensure that the optimizations don’t disrupt the page’s appearance, considering different device resolutions. Finally, it performs functional validation to ensure the optimizations don’t interfere with the page’s functionality.
+Validator: The Validator verifies these rules using computer vision to ensure that the optimizations don’t disrupt the page’s appearance, considering different device resolutions. Finally, it performs functional validation to ensure the optimizations don’t interfere with the page’s functionalities.
 
 
 
 	
-HTML ReWriter: Once validated, the optimization rules are stored in a collection accessed by the HTML ReWriter. The HTML ReWriter then applies these rules to incoming requests matching the URL, optimizing the pages in the background before delivery to the end user.
-When a new request comes in for that URL, P3 applies the cached rules to the page and swiftly returns the optimized version to the user. Through this structured approach, P3 continuously adapts to deliver faster and more responsive content to users. Refer to the official documentation to learn more about P3 Architecture. To visually compare the optimized webpage with the original and gain deeper insights into analysis metrics, visit  View P3 Validations.
 
 
 
